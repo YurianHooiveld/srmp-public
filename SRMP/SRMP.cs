@@ -381,7 +381,7 @@ namespace SRMultiplayer
 
             if (Globals.IsClient)
             {
-                Globals.DisableAchievements = true;
+                Globals.DisableAchievements = false;
                 Globals.LocalPlayer.transform.SetParent(SRSingleton<SceneContext>.Instance.Player.transform, false);
                 Globals.LocalPlayer.HasLoaded = true;
                 foreach (var player in Globals.Players.Values.ToList())

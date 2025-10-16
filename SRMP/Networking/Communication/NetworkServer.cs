@@ -58,7 +58,7 @@ namespace SRMultiplayer.Networking
             m_DiscoverServer = new NetServer(discoverConfig);
             m_DiscoverServer.Start();
 
-            Globals.DisableAchievements = true;
+            Globals.DisableAchievements = false;
             Globals.PartyID = Guid.NewGuid();
 
             byte id = 1;
